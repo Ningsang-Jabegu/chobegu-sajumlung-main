@@ -1,0 +1,254 @@
+/* Font used in this website */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+@font-face {
+    font-family: "preeti-regular";
+    src: url(./fonts/Preeti\ Normal.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "preeti-bold";
+    src: url(./fonts/Preeti\ Bold.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ananda-regular";
+    src: url(./fonts/Ananda\ Akchyar.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ananda-bold";
+    src: url(./fonts/Ananda\ Akchyar\ bold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ganess-regular";
+    src: url(./fonts/Ganess\ Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "yakthung-regular";
+    src: url(./fonts/yakthung.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "yakthung-bold";
+    src: url(./fonts/yakthungb.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+#pre-loader {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: #dfe0e7;
+    min-height: 100vh;
+    position: absolute;
+    width: 100vw;
+}
+#pre-loader div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pre-loader div:first-child div:first-child{
+    border-radius: 50%;
+}
+#pre-loader div:first-child div:nth-child(2) {
+    display: block;
+}
+
+#pre-loader div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#pre-loader div:nth-child(2) div {
+    position: relative;
+    width: 40px;
+    height: 200px;
+    margin: 20px;
+    overflow: hidden;
+    border-radius: 40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.05,
+    #edf1f4));
+    border: 2px solid #edf1f4;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+                -15px -15px 20px #fff,
+                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+#pre-loader div:nth-child(2) div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    border-radius: 40px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #fff,
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+#pre-loader div:nth-child(2) div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: inset -5px -5px 5px rgba(0, 0, 0, 0.2),
+                0 420px 0 400px #2196f3;
+                animation: animate 2.5s ease-in-out infinite;
+    transform: translateY(160px);
+    animation-delay: calc(-0.8s * var(--i));
+}
+@keyframes animate {
+    0% {
+        transform: translateY(160px);
+        filter: hue-rotate(180deg);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(160px);
+        filter: hue-rotate(0deg);
+    }
+}
+#pre-loader div:first-child  {
+    position: relative;
+    margin: 5px;
+    color: #56595c;
+    text-align: center;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #fff,
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+}
+
+/* This is logo for loader */
+#pre-loader div:first-child div:first-child img:first-child {
+    width: 90px;
+    height: 90px;
+}
+#pre-loader div:first-child div:nth-child(2){
+    margin: 25px;
+}
+#pre-loader div:first-child div:nth-child(2) h1:first-child {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+#pre-loader div:first-child div:nth-child(2) h1:nth-child(2) {
+    font-family: "ganess-regular";
+    font-size: 20pt;
+}
+#pre-loader div:first-child div:nth-child(2) h1:nth-child(3) {
+    font-family: "yakthung-bold";
+    font-size: 19pt;
+}
+
+/* Security Check */
+#pre-loader div:nth-child(3) hr:first-child {
+    background-color: rgba(28, 19, 165, 0.849);
+    border: 1px solid rgba(28, 19, 165, 0.849);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #fff,
+    inset -5px -5px 5px rgba(255, 255, 255, 0.5),
+    inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+#pre-loader div:nth-child(3) h1:nth-child(2) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
+    font-size: 12pt;
+    color: #dfe0e7;
+    background: #56595c;
+    width: 130px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    text-align: center;
+    padding: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transform: translate(0 -50px);
+}
+#pre-loader div:nth-child(3) form:nth-child(3) div:first-child{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500; 
+}
+.otp span:first-child select:first-child {
+    width: 125px;
+    height: 37px;
+    background: transparent;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 20px 20px 20px rgba(124, 122, 199, 0.062),
+    -20px -20px 20px rgba(231, 218, 218, 0.925),
+    inset -5px -5px 5px rgba(218, 206, 206, 0.5),
+    inset 5px 5px 5px rgba(107, 109, 151, 0.356);
+}
+.otp span:first-child input {
+    border-radius: 20px;
+    background: inherit;
+    height: 27px;
+    box-shadow: 20px 20px 20px rgba(124, 122, 199, 0.062),
+    -20px -20px 20px rgba(231, 218, 218, 0.925),
+    inset -5px -5px 5px rgba(218, 206, 206, 0.5),
+    inset 5px 5px 5px rgba(107, 109, 151, 0.356);
+    padding: 15px;
+    font-size: 12pt;
+    margin-bottom: 12px;
+}
+.otp span:nth-child(3) {
+    z-index: 35;
+    color: #56595c;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form {
+    width: 100vw;
+}
+.otp {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.otp span:first-child span:nth-child(4) a:first-child {
+    color: rgb(121, 10, 43);
+    font-weight: 900;
+    text-decoration: none;
+}
+.otp span:first-child span:nth-child(4) a:first-child:hover {
+    color: rgba(79, 49, 214, 0.911);
+    text-decoration: underline;
+    transition: 100ms ease-in;
+}
+.otp span:first-child span:nth-child(7) input {
+    width: 50px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
