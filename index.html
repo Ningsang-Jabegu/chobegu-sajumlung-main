@@ -11,7 +11,7 @@
 <body>
     <section id="pre-loader">
         <div>
-            <div>
+            <div class="logo-div">
                 <img src="/Images/logo/new-logo-II.PNG">
             </div>
             <div>
@@ -32,7 +32,7 @@
         <div>
             <hr>
             <h1>Security Check</h1>
-            <form>
+            <form method="post" action="index.html">
                 <div class="otp">
                     <span>
                         Mobile Number : 
@@ -258,8 +258,24 @@
                                 <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                             </optgroup>
                         </select>
-                        <input type="number" name="Phone No." maxlength="10"><br>
-                        <span> &nbsp; &nbsp; Generate <a href="#" title="Click me to generate otp">O.T. P</a></span><br><br>
+                        <input type="number" name="Phone_Number" maxlength="10">
+                        <br>
+                        <span> &nbsp; &nbsp; Generate <a href="#" title="Click me to generate otp" class="trigger">O.T. P</a></span>
+                        <br><br>
+                        <div class="modal">
+                            <div class="modal-content">
+                                <span class="close-button"> &times; </span>
+                                <h2> One Time Password (OTP) :</h2>
+                                <p> Every time you generate otp it will be different. This last for a minute.
+                                    After one minute you can generate another otp. Here is your otp 
+                                    <br>
+                                    <b>KY - ... ... - TC - ... ... - S</b>
+                                    <br>
+                                    <hr>
+                                    Any quiry then mail to : <span class="info-mail">webmaster@chobegusajumlung.org.np</span> 
+                                </p>
+                            </div>
+                        </div>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                         <span class="otp-auto" title="enter your four digit otp sent into your mobile phone.">
                             O.T. P :&nbsp; <b>K Y<b> -
@@ -269,6 +285,7 @@
                             <input type="number" name="OTP3" id="otp3" maxlength="1" onkeyup="move(event, 'otp2', 'otp3', 'otp4')">&nbsp;
                             <input type="number" name="OTP4" id="otp4" maxlength="1" onkeyup="move(event, 'otp3', 'otp4', '')"> &nbsp;
                             <b>- S</b>
+                            
                         </span>
                     </span>
                 </div>
