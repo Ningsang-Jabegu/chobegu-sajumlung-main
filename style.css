@@ -287,8 +287,12 @@ input[type="number"]::-webkit-inner-spin-button {
     color: rgb(38, 24, 112);
 }
 .modal-content p b {
-    font-size: 20pt;
+    font-size: 15pt;
     color: #1e7e26;
+}
+.modal-content p span {
+    font-size: 22pt;
+    font-weight: 700;
 }
 .info-mail {
     color: #cc1385;
@@ -316,4 +320,7 @@ input[type="number"]::-webkit-inner-spin-button {
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+#otp-g-1, #otp-g-2, #otp-g-3, #otp-g-4 {
+    text-decoration: underline dotted red;
 }

@@ -30,3 +30,12 @@ function windowOnClick(event) {
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+/* This is for random number generator for otp */
+function otpGenerator() {
+    document.getElementById("otp-g-1").innerHTML = Math.floor(Math.random() * 10);
+    document.getElementById("otp-g-2").innerHTML = Math.floor(Math.random() * 10);
+    document.getElementById("otp-g-3").innerHTML = Math.floor(Math.random() * 10);
+    document.getElementById("otp-g-4").innerHTML = Math.floor(Math.random() * 10);
+
+}

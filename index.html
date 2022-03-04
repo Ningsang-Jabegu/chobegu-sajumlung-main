@@ -260,7 +260,7 @@
                         </select>
                         <input type="number" name="Phone_Number" maxlength="10">
                         <br>
-                        <span> &nbsp; &nbsp; Generate <a href="#" title="Click me to generate otp" class="trigger">O.T. P</a></span>
+                        <span> &nbsp; &nbsp; Generate <a href="#" title="Click me to generate otp" class="trigger" onclick="otpGenerator()">O.T. P</a></span>
                         <br><br>
                         <div class="modal">
                             <div class="modal-content">
@@ -269,7 +269,7 @@
                                 <p> Every time you generate otp it will be different. This last for a minute.
                                     After one minute you can generate another otp. Here is your otp 
                                     <br>
-                                    <b>KY - ... ... - TC - ... ... - S</b>
+                                    <b>KY - <span id="otp-g-1"></span> <span id="otp-g-2"> </span> - TC - <span id="otp-g-3"> </span> <span id="otp-g-4"> </span> - S</b>
                                     <br>
                                     <hr>
                                     Any quiry then mail to : <span class="info-mail">webmaster@chobegusajumlung.org.np</span> 
