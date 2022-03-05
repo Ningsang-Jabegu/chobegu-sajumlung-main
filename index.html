@@ -36,8 +36,8 @@
                 <div class="otp">
                     <span>
                         Mobile Number : 
-                        <select title="This field is for country code. If you are in Nepal use +977">
-                            <option data-countryCode="GB" value="44" Selected disabled>Country Code</option>
+                        <select title="This field is for country code. If you are in Nepal use +977" class="cCode">
+                            <option data-countryCode="GB" value="NA" Selected disabled>Country Code</option>
                             <option data-countryCode="US" value="977">Nepal (+977)</option>
                             <option data-countryCode="US" value="1">USA (+1)</option>
                             <option data-countryCode="US" value="44">UK (+44)</option>
@@ -258,9 +258,9 @@
                                 <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                             </optgroup>
                         </select>
-                        <input type="number" name="Phone_Number" maxlength="10">
+                        <input type="number" name="Phone_Number" minlength="5" maxlength="10" placeholder="98********" class="user-number" onfocus="checkCode()">
                         <br>
-                        <span> &nbsp; &nbsp; Generate <a href="#" title="Click me to generate otp" class="trigger" onclick="otpGenerator()">O.T. P</a></span>
+                        <span> &nbsp; &nbsp; Generate <a href="#" title="Click me to generate otp" class="trigger" onclick="otpGenerator()">O.T. P<p class="check-num">Please enter a valid mobile number first</p></a></span>
                         <br><br>
                         <div class="modal">
                             <div class="modal-content">
@@ -269,15 +269,15 @@
                                 <p> Every time you generate otp it will be different. This last for a minute.
                                     After one minute you can generate another otp. Here is your otp 
                                     <br>
-                                    <b>KY - <span id="otp-g-1"></span> <span id="otp-g-2"> </span> - TC - <span id="otp-g-3"> </span> <span id="otp-g-4"> </span> - S</b>
+                                    <b>K Y - <span id="otp-g-1"></span> <span id="otp-g-2"> </span> - T C - <span id="otp-g-3"> </span> <span id="otp-g-4"> </span> - S</b>
                                     <br>
-                                    <hr>
-                                    Any quiry then mail to : <span class="info-mail">webmaster@chobegusajumlung.org.np</span> 
+                                    <hr class="hr-model">
+                                    Any query then mail to : <a class="info-mail" href="mailto:webmaster@chobegusajumlung.org.np">webmaster@chobegusajumlung.org.np</a> 
                                 </p>
                             </div>
                         </div>
                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <span class="otp-auto" title="enter your four digit otp sent into your mobile phone.">
+                        <span class="otp-auto" title="enter your four digit otp code.">
                             O.T. P :&nbsp; <b>K Y<b> -
                             <input type="number" name="OTP1" id="otp1" maxlength="1" onkeyup="move(event, '', 'otp1', 'otp2')">&nbsp;
                             <input type="number" name="OTP2" id="otp2" maxlength="1" onkeyup="move(event, 'otp1', 'otp2', 'otp3')">&nbsp;
@@ -287,7 +287,9 @@
                             <b>- S</b>
                             
                         </span>
+                        <button type="submit" value="submit" title="Once you are verified you will be redirected to the home page.">Verify</button>
                     </span>
+                    <span class="mobError"> Something </span>
                 </div>
             </form>
         </div>

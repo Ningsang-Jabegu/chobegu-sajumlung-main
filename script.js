@@ -16,9 +16,29 @@ function move(e, previous, current, next) {
 const modal = document.querySelector(".modal");
 const trigger = document.querySelector(".trigger");
 const closeButton = document.querySelector(".close-button");
+const number = document.querySelector(".user-number");
+const checkNumber = document.querySelector(".check-num");
+const conCode = document.querySelector(".cCode").value;
+const checkCode1 = document.querySelector(".mobError");
+
+function checkCode() {
+    if (conCode == "NA") {
+        checkCode1.style.visibility = "visible";
+    } else {
+        checkCode1.style.visibility = "hidden";
+    }
+}
 
 function toggleModal() {
-    modal.classList.toggle("show-modal");
+    if (number.value.length >= 5) {
+        modal.classList.toggle("show-modal");
+        checkNumber.style.visibility = "hidden";
+    } else {
+        if (number.value.length >= 5) {
+            checkNumber.style.visibility = "hidden";
+        }
+        checkNumber.style.visibility = "visible";
+    }
 }
 
 function windowOnClick(event) {

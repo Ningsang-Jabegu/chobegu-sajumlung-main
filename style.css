@@ -209,10 +209,11 @@
     inset -5px -5px 5px rgba(218, 206, 206, 0.5),
     inset 5px 5px 5px rgba(107, 109, 151, 0.356);
 }
-.otp span:first-child input {
+.otp span:first-child input,
+.otp span:nth-child(2) input {
     border-radius: 20px;
     background: inherit;
-    height: 27px;
+    height: 2em;
     box-shadow: 20px 20px 20px rgba(124, 122, 199, 0.062),
     -20px -20px 20px rgba(231, 218, 218, 0.925),
     inset -5px -5px 5px rgba(218, 206, 206, 0.5),
@@ -221,11 +222,13 @@
     font-size: 12pt;
     margin-bottom: 12px;
 }
-.otp span:nth-child(3) {
-    z-index: 35;
-    color: #56595c;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.otp span:first-child input:focus,
+.otp span:nth-child(2) input:focus {
+    background-color: rgba(255, 255, 255, 0.603);
+    border: 2px solid #fff; 
+}
+.otp span:first-child input {
+    border: 2px solid rgb(190, 184, 184);
 }
 form {
     width: 100vw;
@@ -252,6 +255,32 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+.check-num {
+    top: 3.6em;
+    right: 1.5em;
+    visibility: hidden;
+}
+.mobError {
+    position: absolute;
+    top: 1em;
+    right: 3em;
+    visibility: hidden;
+}
+.check-num, .mobError {
+    font-weight: 400;
+    width: fit-content;
+    padding: .3em;
+    color: black;
+    border: .5px solid rgba(255, 0, 0, 0.473);
+    border-radius: .4em;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.082);
+    font-size: 9pt;
+}
+.check-num:hover {
+    text-decoration: none;
+}
+
 /* This is for model verification */
 .modal{
     position: fixed;
@@ -274,14 +303,11 @@ input[type="number"]::-webkit-inner-spin-button {
     left: 50%;
     border-radius: .5em;
     transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(239, 242, 250);
     padding: 1rem 1.5rem;
     width: 24rem;
     box-shadow: none !important;
     display: block !important;
-}
-.modal-content h2 {
-    color: rgba(206, 64, 64, 0.925);
 }
 .modal-content p {
     color: rgb(38, 24, 112);
@@ -297,22 +323,27 @@ input[type="number"]::-webkit-inner-spin-button {
 .info-mail {
     color: #cc1385;
     font-size: 10pt;
+    text-decoration: none;
 }
 .close-button {
     float: right;
     font-weight: bold;
     padding: 0 .35em .23em .35em;
     font-size: 15pt;
-    border-radius: .22em;
+    border-radius: 50%;
     cursor: pointer;
     background-color: lightgray;
+    position: absolute;
+    right: .005em;
+    top: .5em;
+    border: .2em solid rgb(239, 242, 250);
+    font-weight: 900;
 }
 
 .close-button:hover {
-    background-color: rgba(79, 49, 214, 0.911);
-    color: #fff;
+    background-color: rgb(48, 47, 47);
     cursor: pointer;
-
+    color: rgb(239, 242, 250);
 }
 
 .show-modal {
@@ -322,5 +353,19 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 #otp-g-1, #otp-g-2, #otp-g-3, #otp-g-4 {
-    text-decoration: underline dotted red;
+    background: #ced8e2;
+    border-radius: .35em;
+    padding: 0 .23em ;
+}
+.modal-content h2 {
+    background: #cbd7dfc5;
+    width: 100%;
+    color: #b4343a;
+    z-index: -5;
+    border-radius: .3em;
+}
+.hr-model{
+    margin-top: 1em;
+    color: #1e7e26;
+    border: 1px solid #1e7e26;
 }
