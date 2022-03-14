@@ -533,7 +533,7 @@ section:nth-child(2){
 }
 .settingBox1,.settingBox2,.settingBox3,.settingBox4,.settingBox5,.settingBox6,
 .settingBox7,.settingBox8 {
-    background: #dfe0e7;
+    background: #d1d1d3;
     border-radius: .5em;
     padding: .9em;
     position: absolute;
