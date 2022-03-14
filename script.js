@@ -1,3 +1,4 @@
+
 /* This is for setting drop box */
     const setting = document.querySelector(".setting-dropbox");
     const settingSVG = document.querySelector(".setting");
@@ -5,7 +6,10 @@
     /* This will display the drop down content as well as hide 
         when clicking on the settingSVG */
     function settingDrpBox() {
+        /* Audio for setting */
+        
         setting.classList.toggle("show-setting");
+        
     }
     /*This will hide the drop down content when clicked in 
         background of the drop down content box */
@@ -19,81 +23,129 @@
         function settingContent1() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox1").style.visibility = "visible";
+            document.querySelector("li:first-child").style.background = "green";
+            document.querySelector("li:first-child").style.color = "#fff";
+            document.querySelector("li:first-child").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting1() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox1").style.visibility = "hidden";
+            document.querySelector("li:first-child").style.background = "transparent";
+            document.querySelector("li:first-child").style.color = "#000";
+            document.querySelector("li:first-child").style.fill = "#000";
         }
     /* Second setting Content */
         function settingContent2() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox2").style.visibility = "visible";
+            document.querySelector("li:nth-child(2)").style.background = "green";
+            document.querySelector("li:nth-child(2)").style.color = "#fff";
+            document.querySelector("li:nth-child(2)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting2() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox2").style.visibility = "hidden";
+            document.querySelector("li:nth-child(2)").style.background = "transparent";
+            document.querySelector("li:nth-child(2)").style.color = "#000";
+            document.querySelector("li:nth-child(2)").style.fill = "#000";
         }
     /* Third setting Content */
         function settingContent3() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox3").style.visibility = "visible";
+            document.querySelector("li:nth-child(3)").style.background = "green";
+            document.querySelector("li:nth-child(3)").style.color = "#fff";
+            document.querySelector("li:nth-child(3)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting3() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox3").style.visibility = "hidden";
+            document.querySelector("li:nth-child(3)").style.background = "transparent";
+            document.querySelector("li:nth-child(3)").style.color = "#000";
+            document.querySelector("li:nth-child(3)").style.fill = "#000";
         }
     /* Fourth setting Content */
         function settingContent4() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox4").style.visibility = "visible";
+            document.querySelector("li:nth-child(4)").style.background = "green";
+            document.querySelector("li:nth-child(4)").style.color = "#fff";
+            document.querySelector("li:nth-child(4)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting4() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox4").style.visibility = "hidden";
+            document.querySelector("li:nth-child(4)").style.background = "transparent";
+            document.querySelector("li:nth-child(4)").style.color = "#000";
+            document.querySelector("li:nth-child(4)").style.fill = "#000";
         }
     /* Fifth setting Content */
         function settingContent5() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox5").style.visibility = "visible";
+            document.querySelector("li:nth-child(5)").style.background = "green";
+            document.querySelector("li:nth-child(5)").style.color = "#fff";
+            document.querySelector("li:nth-child(5)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting5() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox5").style.visibility = "hidden";
+            document.querySelector("li:nth-child(5)").style.background = "transparent";
+            document.querySelector("li:nth-child(5)").style.color = "#000";
+            document.querySelector("li:nth-child(5)").style.fill = "#000";
         }
     /* Sixth setting Content */
         function settingContent6() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox6").style.visibility = "visible";
+            document.querySelector("li:nth-child(6)").style.background = "green";
+            document.querySelector("li:nth-child(6)").style.color = "#fff";
+            document.querySelector("li:nth-child(6)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting6() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox6").style.visibility = "hidden";
+            document.querySelector("li:nth-child(6)").style.background = "transparent";
+            document.querySelector("li:nth-child(6)").style.color = "#000";
+            document.querySelector("li:nth-child(6)").style.fill = "#000";
         }
     /* Seventh setting Content */
         function settingContent7() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox7").style.visibility = "visible";
+            document.querySelector("li:nth-child(7)").style.background = "green";
+            document.querySelector("li:nth-child(7)").style.color = "#fff";
+            document.querySelector("li:nth-child(7)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting7() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox7").style.visibility = "hidden";
+            document.querySelector("li:nth-child(7)").style.background = "transparent";
+            document.querySelector("li:nth-child(7)").style.color = "#000";
+            document.querySelector("li:nth-child(7)").style.fill = "#000";
         }
     /* Eight setting Content */
         function settingContent8() {
             document.querySelector(".settingContent-modalBox").style.visibility = "visible";
             document.querySelector(".settingBox8").style.visibility = "visible";
+            document.querySelector("li:nth-child(8)").style.background = "green";
+            document.querySelector("li:nth-child(8)").style.color = "#fff";
+            document.querySelector("li:nth-child(8)").style.fill = "#fff";
         };
         /* On clicking X hide model */
         function closeSetting8() {
             document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
             document.querySelector(".settingBox8").style.visibility = "hidden";
+            document.querySelector("li:nth-child(8)").style.background = "transparent";
+            document.querySelector("li:nth-child(8)").style.color = "#000";
+            document.querySelector("li:nth-child(8)").style.fill = "#000";
         }
 
 /* This is for country code checking*/

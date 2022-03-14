@@ -543,9 +543,9 @@ section:nth-child(2){
     transform: translate(5em, 5em);
     z-index: 36;
     border: .1em solid rgb(16, 104, 35);
-    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
-                inset -5px -5px 5px rgba(255, 255, 255, 0.5),
-                inset 5px 5px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.192),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.664),
+                inset 5px 5px 5px rgba(0, 0, 0, 0.096);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
