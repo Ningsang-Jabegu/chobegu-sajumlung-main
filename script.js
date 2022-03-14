@@ -1,37 +1,100 @@
 /* This is for setting drop box */
     const setting = document.querySelector(".setting-dropbox");
+    const settingSVG = document.querySelector(".setting");
+    const settingLists = document.querySelector(".settingLists").getElementsByTagName('ul');
+    /* This will display the drop down content as well as hide 
+        when clicking on the settingSVG */
     function settingDrpBox() {
-        /* 
-            When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            if(setting.classList.contains('hide-settingContent')) {
-                setting.classList.remove('hide-settingContent');
-            }
-            setting.classList.add('show-setting');  
-}
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.setting')) {
-      var dropdowns = document.getElementsByClassName("setting-dropbox");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show-setting')) {
-          openDropdown.classList.remove('show-setting');
-        }
-      }
+        setting.classList.toggle("show-setting");
     }
-  }
-
-/* This is to close setting */
-    function closeSetting() {
-        setting.style.visibility = "hidden";
-    };
-
+    /*This will hide the drop down content when clicked in 
+        background of the drop down content box */
+    
 /* This is setting content */
-    function settingContent() {
-        alert("HI");
-    };
+/*-webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 2s */
+    /* First setting Content */
+        function settingContent1() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox1").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting1() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox1").style.visibility = "hidden";
+        }
+    /* Second setting Content */
+        function settingContent2() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox2").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting2() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox2").style.visibility = "hidden";
+        }
+    /* Third setting Content */
+        function settingContent3() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox3").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting3() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox3").style.visibility = "hidden";
+        }
+    /* Fourth setting Content */
+        function settingContent4() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox4").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting4() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox4").style.visibility = "hidden";
+        }
+    /* Fifth setting Content */
+        function settingContent5() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox5").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting5() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox5").style.visibility = "hidden";
+        }
+    /* Sixth setting Content */
+        function settingContent6() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox6").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting6() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox6").style.visibility = "hidden";
+        }
+    /* Seventh setting Content */
+        function settingContent7() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox7").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting7() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox7").style.visibility = "hidden";
+        }
+    /* Eight setting Content */
+        function settingContent8() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "visible";
+            document.querySelector(".settingBox8").style.visibility = "visible";
+        };
+        /* On clicking X hide model */
+        function closeSetting8() {
+            document.querySelector(".settingContent-modalBox").style.visibility = "hidden";
+            document.querySelector(".settingBox8").style.visibility = "hidden";
+        }
 
 /* This is for country code checking*/
     function cCodeChanged() {
@@ -45,7 +108,7 @@ window.onclick = function(event) {
             errMsg.style.visibility = "hidden";
             document.getElementsByClassName(".user-number").disabled = false;
         }
-    }
+    };
 
 /* On focusing to user-number input get error msg saying choose country code 
     function onFocusUserNumber() {
@@ -86,17 +149,8 @@ function toggleModal() {
             }
             checkNumber.style.visibility = "visible";
     }
-}
-function toggleSetting() {
-    if (setting.style.visibility = "visible") {
-        setting.style.visibility = "hidden";
-    } 
-}
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
+};
+var windowOnClick;
 trigger.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
@@ -161,7 +215,7 @@ timer(60);
     }
 
     /* Check the otp code */
-}
+};
 
 /* This is for verification box */
 function move(e, previous, current, next) {
@@ -176,4 +230,4 @@ function move(e, previous, current, next) {
         if (previous !== "")
         document.getElementById(previous).focus();
     }
-}
+};
