@@ -150,7 +150,6 @@
 /* This is for default theme setting content */
     function defaultTheme1() {
         const tick = document.querySelector(".settingBody h1:first-child div:nth-child(2) svg").style.visibility = "visible";
-        alert(tick.value);
         if (tick.value = "visible") {
             tick.value = "hide";
             }
