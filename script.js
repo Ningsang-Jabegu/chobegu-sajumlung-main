@@ -7,9 +7,7 @@
         when clicking on the settingSVG */
     function settingDrpBox() {
         /* Audio for setting */
-        
         setting.classList.toggle("show-setting");
-        
     }
     /*This will hide the drop down content when clicked in 
         background of the drop down content box */
@@ -34,6 +32,8 @@
             document.querySelector("li:first-child").style.background = "transparent";
             document.querySelector("li:first-child").style.color = "#000";
             document.querySelector("li:first-child").style.fill = "#000";
+            document.querySelector(".settingBody h1:first-child div:nth-child(2) svg").style.visibility = "hidden";
+            document.querySelector(".settingBody h1:first-child div:nth-child(4) svg").style.visibility = "hidden";
         }
     /* Second setting Content */
         function settingContent2() {
@@ -147,6 +147,18 @@
             document.querySelector("li:nth-child(8)").style.color = "#000";
             document.querySelector("li:nth-child(8)").style.fill = "#000";
         }
+/* This is for default theme setting content */
+    function defaultTheme1() {
+        const tick = document.querySelector(".settingBody h1:first-child div:nth-child(2) svg").style.visibility = "visible";
+        alert(tick.value);
+        if (tick.value = "visible") {
+            tick.value = "hide";
+            }
+    }
+    function defaultTheme2() {
+        const tick = document.querySelector(".settingBody h1:first-child div:nth-child(4) svg").style.visibility = "visible";
+
+    }
 
 /* This is for country code checking*/
     function cCodeChanged() {
