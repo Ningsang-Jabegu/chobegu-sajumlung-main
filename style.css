@@ -157,18 +157,24 @@ body {
     margin: 25px;
 }
 #pre-loader div:first-child div:nth-child(2) h1:first-child {
+    color: red;
+    font-family: "ananda-bold";
+    font-size: 13pt;
+    font-weight: 500;
+}
+#pre-loader div:first-child div:nth-child(2) h1:nth-child(2) {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: medium;
     color: #df2020;
     margin-bottom: .2em;
     text-transform: capitalize;
 }
-#pre-loader div:first-child div:nth-child(2) h1:nth-child(2) {
+#pre-loader div:first-child div:nth-child(2) h1:nth-child(3) {
     font-family: "ganess-regular";
     font-size: 20pt;
     color: #50456F;
 }
-#pre-loader div:first-child div:nth-child(2) h1:nth-child(3) {
+#pre-loader div:first-child div:nth-child(2) h1:nth-child(4) {
     font-family: "yakthung-bold";
     font-size: 19pt;
     color: #306948;
@@ -755,7 +761,10 @@ section:nth-child(2){
     font-size: 11pt;
     line-height: 2em;
 }
-.settingboxInfoLink p:hover {
+.settingboxInfoLink p a {
+    text-decoration: none;
+}
+.settingboxInfoLink p:hover, .settingboxInfoLink p a:hover {
     cursor: pointer;
     color: rgb(24, 24, 206);
 }
@@ -879,4 +888,71 @@ section:nth-child(2){
     position: absolute;
     top: 35em;
     right: 3.3em;
+}
+/* Thi is for license page */
+.aboutPageHeading {
+    border-top-right-radius: .2em;
+    border-bottom-right-radius: 3em;
+    margin-right: -2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.aboutPageHeading,.aboutPageHeadingNP {
+    text-align: left;
+    align-items: center;
+    float: left;
+    margin: .2em;
+    background: #5b3ab4d2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.aboutPageHeading h1:first-child {
+    font-weight: 800;
+    font-size: 14pt;
+    margin: .5em;
+    margin-right: 1em;
+    color: rgb(247, 244, 244);
+}
+.aboutBodySection {
+    position: absolute;
+    top: 11.9em;
+    width: 100vw;
+    height: fit-content;
+}
+.aboutUpdateDate {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: .5em;
+    right: 2em;
+    font-weight: 600;
+}
+.aboutSecContent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 15.5em;
+    left: .8em;
+    width: 98vw;
+}
+.aboutSecContent p:first-child {
+    font-weight: 700;
+}
+.aboutSecContent P:nth-child(2) {
+    font-weight: 700;
+    margin-top: .3em;
+}
+.aboutSecContent hr {
+    border: .3px solid gray;
+    background: gray;
+    margin-top: .2em;
+}
+.aboutSecContent p:nth-child(4), .aboutSecContent P:nth-child(5) {
+    margin-top: .4em;
+    font-size: 10pt;
+    line-height: 1.5em;
+    margin-bottom: .4em;
+}
+.aboutSecContent p:nth-child(7) {
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+.aboutSecContent p:nth-child(8) span:first-child {
+    font-weight: 700;
 }
