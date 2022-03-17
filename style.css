@@ -43,7 +43,7 @@
     font-weight: normal;
 }
 body {
-    background: #dfe0e7;
+    background: #ae93da71;
 }
 *{
     margin: 0;
@@ -56,8 +56,7 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-
-    min-height: 100vh;
+    background: #dfe0e7;
     position: absolute;
     width: 100vw;
 }
@@ -157,7 +156,7 @@ body {
     margin: 25px;
 }
 #pre-loader div:first-child div:nth-child(2) h1:first-child {
-    color: red;
+    color: #df2020;
     font-family: "ananda-bold";
     font-size: 13pt;
     font-weight: 500;
@@ -896,40 +895,41 @@ section:nth-child(2){
     margin-right: -2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.aboutPageHeading,.aboutPageHeadingNP {
-    text-align: left;
+.aboutPageHeading {
     align-items: center;
     float: left;
-    margin: .2em;
-    background: #5b3ab4d2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #5b3ab4d0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.329);
 }
 .aboutPageHeading h1:first-child {
     font-weight: 800;
     font-size: 14pt;
     margin: .5em;
     margin-right: 1em;
+    padding-left: 2em;
     color: rgb(247, 244, 244);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.116), 0 6px 20px 0 rgba(0, 0, 0, 0.329);
 }
 .aboutBodySection {
     position: absolute;
-    top: 11.9em;
+    top: 15.9em;
+    left: 2em;
     width: 100vw;
-    height: fit-content;
+
 }
 .aboutUpdateDate {
     position: absolute;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     top: .5em;
-    right: 2em;
+    right: 10em;
     font-weight: 600;
 }
 .aboutSecContent {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
-    top: 15.5em;
-    left: .8em;
-    width: 98vw;
+    top: 19.5em;
+    left: 5em;
+    width: 90%;
 }
 .aboutSecContent p:first-child {
     font-weight: 700;
@@ -955,4 +955,26 @@ section:nth-child(2){
 }
 .aboutSecContent p:nth-child(8) span:first-child {
     font-weight: 700;
+}
+.frameTop {
+    position: absolute;
+    top: 12em;
+    width: 100%;
+    height: 10%;
+    z-index: 4;
+}
+.frameLeft {
+    position: absolute;
+    top: 12em;
+    width: 6%;
+    height: 100%;
+    z-index: 3;
+}
+.frameRight {
+    position: absolute;
+    top: 12em;
+    right: 0;
+    height: 100%;
+    width: 6%;
+    z-index: 3;
 }
