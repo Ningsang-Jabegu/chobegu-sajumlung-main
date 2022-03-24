@@ -43,7 +43,7 @@
     font-weight: normal;
 }
 body {
-    background: #ae93da71;
+    background: #dfe76471;
 }
 *{
     margin: 0;
@@ -977,4 +977,12 @@ section:nth-child(2){
     height: 100%;
     width: 6%;
     z-index: 3;
+}
+.frameBottom {
+    position: absolute;
+    top: 55em;
+    bottom: 0;
+    height: 14%;
+    width: 100%;
+    z-index: 4;
 }
